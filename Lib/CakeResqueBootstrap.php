@@ -36,7 +36,8 @@ foreach ($paths as $path) {
 
 if (!$found) {
 	$root = dirname(dirname(getenv('CAKE')));
-	if (!include $root . $ds . 'lib' . $ds . $dispatcher) {
+	// if (!include $root . $ds . 'lib' . $ds . $dispatcher) {
+	if (!include $root . $ds . 'CakePHP' . $ds . $dispatcher) {
 		trigger_error('Could not locate CakePHP core files.', E_USER_ERROR);
 	}
 } else {

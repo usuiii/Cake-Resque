@@ -41,8 +41,9 @@ class Resque_Job_Creator {
 			self::$rootFolder = dirname(dirname(dirname(__DIR__))) . DS;
 		}
 
-		$classpath = self::$rootFolder . (empty($plugin) ? '' : 'Plugin' . DS . $plugin . DS) . 'Console' . DS . 'Command' . DS . $model . '.php';
-
+		// $classpath = self::$rootFolder . (empty($plugin) ? '' : 'Plugin' . DS . $plugin . DS) . 'Console' . DS . 'Command' . DS . $model . '.php';
+		$classpath = self::$rootFolder . (empty($plugin) ? 'app' . DS : 'Plugin' . DS . $plugin . DS) . 'Console' . DS . 'Command' . DS . $model . '.php';
+		
 		if (file_exists($classpath)) {
 			require_once $classpath;
 		} else {
