@@ -85,7 +85,7 @@ class CakeResque {
 		}
 
 		//$pluginVendorPath = CakePlugin::path('CakeResque') . 'vendor' . DS;
-		$pluginVendorPath = 'vendor' . DS;
+		$pluginVendorPath = CakePlugin::path('CakeResque') . '../../Vendor' . DS;
 
 		if (!Folder::isAbsolute($resqueLib)) {
 			$resqueLib = $pluginVendorPath . $resqueLib;

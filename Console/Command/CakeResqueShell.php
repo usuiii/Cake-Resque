@@ -69,8 +69,9 @@ class CakeResqueShell extends Shell {
 		$resqueLib = Configure::read('CakeResque.Resque.lib');
 		$schedulerLib = Configure::read('CakeResque.Scheduler.lib');
 
-		$pluginVendorPath = CakePlugin::path('CakeResque') . 'vendor' . DS;
-
+		//$pluginVendorPath = CakePlugin::path('CakeResque') . 'vendor' . DS;
+		$pluginVendorPath = CakePlugin::path('CakeResque') . '../../Vendor' . DS;
+		
 		if (substr($resqueLib, 0, 1) !== '/') {
 			$resqueLib = $pluginVendorPath . $resqueLib;
 		}
