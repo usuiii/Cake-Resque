@@ -84,7 +84,8 @@ class CakeResque {
 			throw new ConfigureException(__d('cake_resque', 'There is an error in the Redis configuration key.'));
 		}
 
-		$pluginVendorPath = CakePlugin::path('CakeResque') . 'vendor' . DS;
+		//$pluginVendorPath = CakePlugin::path('CakeResque') . 'vendor' . DS;
+		$pluginVendorPath = 'vendor' . DS;
 
 		if (!Folder::isAbsolute($resqueLib)) {
 			$resqueLib = $pluginVendorPath . $resqueLib;
@@ -99,7 +100,6 @@ class CakeResque {
 		if (!Folder::isAbsolute($statusLib)) {
 			$statusLib = $pluginVendorPath . $statusLib;
 		}
-
 		require_once realpath($resqueLib . 'Resque.php');
 		require_once realpath($resqueLib . 'Resque' . DS . 'Worker.php');
 		require_once realpath($schedulerLib . 'ResqueScheduler.php');

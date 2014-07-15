@@ -124,7 +124,8 @@ $config['CakeResque'] = array(
 		'lib' => 'kamisama/php-resque-ex',
 
 		// Path to the directory containing the worker PID files
-		'tmpdir' => App::pluginPath('CakeResque') . 'tmp' . DS
+		//'tmpdir' => App::pluginPath('CakeResque') . 'tmp' . DS
+		'tmpdir' => TMP . 'CakeResque' . DS . 'tmp' . DS
 	),
 
 	// Other usefull environment variable you wish to set
