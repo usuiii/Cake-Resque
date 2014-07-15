@@ -20,8 +20,8 @@
     "url": "http://www.kamisama.me"
   },
   "license": "MIT",
-  "bugs": "https://github.com/kamisama/Cake-Resque/issues",
-  "github": "https://github.com/kamisama/Cake-Resque",
+  "bugs": "https://github.com/usuiii/Cake-Resque/issues",
+  "github": "https://github.com/usuiii/Cake-Resque",
   "devDependencies": {
     "grunt-shell": "~0.2.2",
     "grunt-contrib-watch": "~0.4.0",
