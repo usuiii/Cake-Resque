@@ -1,5 +1,5 @@
 {
-	"name": "usuiii/cake-resque",
+	"name": "kamisama/cake-resque",
 	"description" : "A CakePHP plugin for creating background jobs with Resque",
 	"keywords": ["php-resque", "resque", "cli", "cakephp", "background jobs", "scheduled jobs"],
 	"homepage": "http://cakeresque.kamisama.me",
