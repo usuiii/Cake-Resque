@@ -125,7 +125,7 @@ $config['CakeResque'] = array(
 
 		// Path to the directory containing the worker PID files
 		//'tmpdir' => App::pluginPath('CakeResque') . 'tmp' . DS
-		'tmpdir' => TMP . 'CakeResque' . DS . 'tmp' . DS
+		'tmpdir' => TMP . 'CakeResque' . DS 
 	),
 
 	// Other usefull environment variable you wish to set
